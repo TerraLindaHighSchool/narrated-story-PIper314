@@ -9,9 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Space extends World
 {
     private Star[] stars = new Star[210];
-    Color color1 = new Color(123,230,30);
-    Color color2 = new Color(123,150,230);
-    Color color3 = new Color(123,50,200);
+    Color color1 = new Color(255, 250, 205, 130);
+    Color color2 = new Color(240, 128, 128, 118);
+    Color color3 = new Color(221, 160, 221, 123);
 
     /**
      * Constructor for objects of class Space.
@@ -36,23 +36,23 @@ public class Space extends World
              
              if(i < 70)
              {
-                //star = new Star(-1 - deltaSpeed, color1, getWidth(), getHeight());
-                //addObject(star, star.getX(), star.getY());
-                //stars[i] = star;
+                star = new Star(-1 - deltaSpeed, color1, getWidth(), getHeight());
+                addObject(star, star.getX(), star.getY());
+                stars[i] = star;
              }
              
              if(i >= 70 && i < 140)
              {
-                //star = new Star(-3 - deltaSpeed, color2, getWidth(), getHeight());
-                //addObject(star, star.getX(), star.getY());
-                //stars[i] = star;
+                star = new Star(-3 - deltaSpeed, color2, getWidth(), getHeight());
+                addObject(star, star.getX(), star.getY());
+                stars[i] = star;
              }
              
              if(i >= 140)
              {
-                //star = new Star(-5 - deltaSpeed, color3, getWidth(), getHeight());
-                //addObject(star, star.getX(), star.getY());
-                //stars[i] = star;
+                star = new Star(-5 - deltaSpeed, color3, getWidth(), getHeight());
+                addObject(star, star.getX(), star.getY());
+                stars[i] = star;
              }
          }
     }

@@ -35,4 +35,14 @@ public class Star extends Actor
        }
        
    }
+   
+   public int getX()
+   {
+       return x;
+   }
+   
+   public int getY()
+   {
+       return y;
+   }
 }
