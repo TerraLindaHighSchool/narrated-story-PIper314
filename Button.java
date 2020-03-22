@@ -10,21 +10,21 @@ import greenfoot.*;
  * @author Neil Brown and Michael Kölling 
  * @version 1.1
  */
-public class Counter extends Actor
+public class Button extends Actor
 {
     private static final Color transparent = new Color(0,0,0,0);
     private GreenfootImage background;
     private String prefix;
     
-    public Counter()
+    public Button()
     {
-        this(new String());
+        this("Click to Begin Story");
     }
 
     /**
      * Create a new counter, initialised to 0.
      */
-    public Counter(String prefix)
+    public Button(String prefix)
     {
         background = getImage();  // get image from class
         this.prefix = prefix;
