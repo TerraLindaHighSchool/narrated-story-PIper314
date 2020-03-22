@@ -1,4 +1,5 @@
 #Greenfoot project file
+class.Counter.image=Counter.png
 class.Creature.image=Creature.png
 dependency1.from=Space
 dependency1.to=Star
@@ -57,5 +58,5 @@ target4.y=10
 version=3.0.0
 width=822
 world.lastInstantiated=Space
-xPosition=836
-yPosition=332
+xPosition=561
+yPosition=327
