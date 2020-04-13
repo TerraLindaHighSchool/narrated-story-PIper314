@@ -21,12 +21,12 @@ public class Space extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-
+        
+        prepare();
         GreenfootImage image = getBackground();
         image.setColor(Color.BLACK);
         image.fill();
         star();
-        prepare();
     }
 
     private void star()
@@ -75,7 +75,9 @@ public class Space extends World
      */
     private void prepare()
     {
-        Creature creature = new Creature();
-        addObject(creature,378,252);
+     Creature creature = new Creature();
+     addObject(creature,378,252);
+     Button button = new Button();
+     addObject(button,87,14);
     }
 }
