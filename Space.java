@@ -75,9 +75,9 @@ public class Space extends World
      */
     private void prepare()
     {
-     Creature creature = new Creature();
-     addObject(creature,378,252);
-     Button button = new Button();
-     addObject(button,87,14);
+        Creature creature = new Creature();
+        addObject(creature,378,252);
+        Button button = new Button();
+        addObject(button,105,14);
     }
 }

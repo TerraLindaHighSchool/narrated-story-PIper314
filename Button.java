@@ -19,7 +19,7 @@ public class Button extends Actor
     
     public Button()
     {
-        this("Click to Begin Story");
+        this("Click to Begin Adventure");
     }
 
     /**
@@ -36,7 +36,7 @@ public class Button extends Actor
     public void act() 
     {
       if(Greenfoot.mouseClicked(this) && !narration.isPlaying())
-       {
+      {
            narration.play();
       }
     }    
